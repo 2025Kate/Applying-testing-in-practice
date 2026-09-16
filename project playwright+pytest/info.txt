@@ -1,0 +1,23 @@
+Для изучения Playwright используется ресурс: https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/auth/registration
+С помощью DevTools установлено, что на странице регистрации присутствуют следующие элементы:
+* Поле "Email"
+    id=":r1:-label"
+    data-testid="registration-form-email-input"
+* Поле "Username"
+    id=":r2:-label"
+    data-testid="registration-form-username-input"
+* Поле "Password"
+    id=":r3:-label"
+    data-testid="registration-form-password-input"
+* Кнопка "Registration"
+    id="registration-page-registration-button"
+    data-testid="registration-page-registration-button"
+* Ссылка "Login"
+    id="registration-page-login-link"
+    data-testid="registration-page-login-link"
+
+После того как пользователь заполнит все поля и нажмёт на кнопку Registration должен быть осуществлён переход на страницу с URL: https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/dashboard
+Заголовок которой выглядит следующим образом:
+<h6 data-testid="dashboard-toolbar-title-text">
+    Dashboard
+</h6>
