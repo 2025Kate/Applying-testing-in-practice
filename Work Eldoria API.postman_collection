@@ -1,0 +1,627 @@
+{
+  "info": {
+    "_postman_id": "6795a0b3-151b-4ef8-ba91-deed82472115",
+    "name": "Eldoria API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "45598744",
+    "_collection_link": "https://go.postman.co/collection/45598744-6795a0b3-151b-4ef8-ba91-deed82472115?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "API Network",
+      "item": [
+        {
+          "name": "Connection check",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.realbugz.com/",
+              "protocol": "https",
+              "host": [
+                "api",
+                "realbugz",
+                "com"
+              ],
+              "path": [
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "The creation of an expedition",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Gold mining\",\n    \"start_date\": \"2026-09-09\",\n    \"end_date\": \"2029-09-09\",\n    \"status\": \"planned\",\n    \"description\": \"A small expedition in which 2 people will take part.\",\n    \"location\": \"Sakhalin\",\n    \"budget\": 1000000\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.realbugz.com/expeditions/",
+              "protocol": "https",
+              "host": [
+                "api",
+                "realbugz",
+                "com"
+              ],
+              "path": [
+                "expeditions",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Verification of the created expedition",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.realbugz.com/expeditions/89",
+              "protocol": "https",
+              "host": [
+                "api",
+                "realbugz",
+                "com"
+              ],
+              "path": [
+                "expeditions",
+                "89"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Updating data in the expedition",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Gold mining\",\r\n    \"start_date\": \"2026-09-09\",\r\n    \"end_date\": \"2029-10-09\",\r\n    \"status\": \"planned\",\r\n    \"description\": \"A small expedition in which 2 people will take part.\",\r\n    \"location\": \"Sakhalin\",\r\n    \"budget\": 1100000\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.realbugz.com/expeditions/89",
+              "protocol": "https",
+              "host": [
+                "api",
+                "realbugz",
+                "com"
+              ],
+              "path": [
+                "expeditions",
+                "89"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Data update check",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.realbugz.com/expeditions/89",
+              "protocol": "https",
+              "host": [
+                "api",
+                "realbugz",
+                "com"
+              ],
+              "path": [
+                "expeditions",
+                "89"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Deleting the created expedition",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://api.realbugz.com/expeditions/89",
+              "protocol": "https",
+              "host": [
+                "api",
+                "realbugz",
+                "com"
+              ],
+              "path": [
+                "expeditions",
+                "89"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Check for record deletion",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.realbugz.com/expeditions/89",
+              "protocol": "https",
+              "host": [
+                "api",
+                "realbugz",
+                "com"
+              ],
+              "path": [
+                "expeditions",
+                "89"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Creating a new expedition",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"NEW expedition\",\n    \"start_date\": \"2027-07-18\",\n    \"end_date\": \"2027-12-31\",\n    \"status\": \"planned\",\n    \"description\": \"An expedition for 3 person.\",\n    \"location\": \"Africa\",\n    \"budget\": 150000\n}\n\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.realbugz.com/expeditions/",
+              "protocol": "https",
+              "host": [
+                "api",
+                "realbugz",
+                "com"
+              ],
+              "path": [
+                "expeditions",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Checking the creation of a new expedition",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.realbugz.com/expeditions/89",
+              "protocol": "https",
+              "host": [
+                "api",
+                "realbugz",
+                "com"
+              ],
+              "path": [
+                "expeditions",
+                "89"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Creating 1 participant",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Max\",\r\n  \"role\": \"leader\",\r\n  \"specialization\": \"researcher\",\r\n  \"experience\": 10,\r\n  \"expedition_id\": 89\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.realbugz.com/participants/",
+              "protocol": "https",
+              "host": [
+                "api",
+                "realbugz",
+                "com"
+              ],
+              "path": [
+                "participants",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Creating 2 participant",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Mikhail\",\r\n  \"role\": \"assistant\",\r\n  \"specialization\": \"photographer\",\r\n  \"experience\": 7,\r\n  \"expedition_id\": 89\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.realbugz.com/participants/",
+              "protocol": "https",
+              "host": [
+                "api",
+                "realbugz",
+                "com"
+              ],
+              "path": [
+                "participants",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Creating 3 participant",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Mark\",\r\n  \"role\": \"assistant\",\r\n  \"specialization\": \"cook\",\r\n  \"experience\": 25,\r\n  \"expedition_id\": 89\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.realbugz.com/participants/",
+              "protocol": "https",
+              "host": [
+                "api",
+                "realbugz",
+                "com"
+              ],
+              "path": [
+                "participants",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Verification of expedition participants",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.realbugz.com/expeditions/89",
+              "protocol": "https",
+              "host": [
+                "api",
+                "realbugz",
+                "com"
+              ],
+              "path": [
+                "expeditions",
+                "89"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update 1 for the participant",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Max\",\r\n  \"role\": \"leader\",\r\n  \"specialization\": \"researcher\",\r\n  \"experience\": 13,\r\n  \"expedition_id\": 89\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.realbugz.com/participants/168",
+              "protocol": "https",
+              "host": [
+                "api",
+                "realbugz",
+                "com"
+              ],
+              "path": [
+                "participants",
+                "168"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Check update of participant 1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "\r\n\r\n\r\n\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.realbugz.com/participants/168",
+              "protocol": "https",
+              "host": [
+                "api",
+                "realbugz",
+                "com"
+              ],
+              "path": [
+                "participants",
+                "168"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Removal of participant No. 3",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "\r\n\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.realbugz.com/participants/170",
+              "protocol": "https",
+              "host": [
+                "api",
+                "realbugz",
+                "com"
+              ],
+              "path": [
+                "participants",
+                "170"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Check for the removal of participant No. 3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.realbugz.com/participants/170",
+              "protocol": "https",
+              "host": [
+                "api",
+                "realbugz",
+                "com"
+              ],
+              "path": [
+                "participants",
+                "170"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Creating an artifact",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Kobus anselli\",\r\n  \"description\": \"a rare African antelope\",\r\n  \"discovery_date\": \"2027-09-03\",\r\n  \"condition\": \"excellent\",\r\n  \"estimated_age\": 5,\r\n  \"location\": \"Kamalondo Depression\",\r\n  \"expedition_id\": 89\r\n}\r\n\r\n\r\n\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.realbugz.com/artifacts/",
+              "protocol": "https",
+              "host": [
+                "api",
+                "realbugz",
+                "com"
+              ],
+              "path": [
+                "artifacts",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Artifact creation check",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "\r\n\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.realbugz.com/artifacts/82",
+              "protocol": "https",
+              "host": [
+                "api",
+                "realbugz",
+                "com"
+              ],
+              "path": [
+                "artifacts",
+                "82"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Verification of information about the expedition",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.realbugz.com/expeditions/89",
+              "protocol": "https",
+              "host": [
+                "api",
+                "realbugz",
+                "com"
+              ],
+              "path": [
+                "expeditions",
+                "89"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Removing a new expedition",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.realbugz.com/expeditions/89",
+              "protocol": "https",
+              "host": [
+                "api",
+                "realbugz",
+                "com"
+              ],
+              "path": [
+                "expeditions",
+                "89"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Checking the deletion of a new expedition",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.realbugz.com/expeditions/89",
+              "protocol": "https",
+              "host": [
+                "api",
+                "realbugz",
+                "com"
+              ],
+              "path": [
+                "expeditions",
+                "89"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
